@@ -112,25 +112,25 @@ showRadio() {
          alert.addInput({
            type: 'radio',
            label: '野村　武',
-           value: ""
+           value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
          });
 
          alert.addInput({
            type: 'radio',
            label: '内田　忠',
-           value: ""
+           value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
          });
 
          alert.addInput({
            type: 'radio',
            label: '栗林　修',
-           value: ""
+           value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
          });
 
          alert.addInput({
            type: 'radio',
            label: '島田　岳雄',
-           value: ""
+           value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
          });
 
          alert.addInput({
