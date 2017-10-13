@@ -245,12 +245,12 @@ var SendPage = (function () {
                         console.log('myAdd: ' + _this.myAddress);
                         console.log('yourAdd: ' + _this.yourAddress);
                         if (_this.myAddress == _this.yourAddress) {
-                            var alert = _this.alertCtrl.create({
+                            var alert_1 = _this.alertCtrl.create({
                                 title: 'error',
                                 subTitle: '自分には送信できません',
                                 buttons: ['OK']
                             });
-                            alert.present();
+                            alert_1.present();
                         }
                         else {
                             _this.send_marucoin();
@@ -268,10 +268,11 @@ SendPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-send',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/send/send.html"*/'<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      受送金\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="send-content" padding>\n  <div id="page3-markdown3" style="text-align:center;" class="show-list-numbers-and-dots">\n    <p>\n      アドレス（QRコード）で仮想通貨を受送金できます。\n    </p>\n  </div>\n  <div id="page3-markdown6" style="text-align:center;" class="show-list-numbers-and-dots">\n    <!--\n     <ion-item>\n      //今はここに打ち込みテストしていますが、URLは内部でゲットしてくるようにします\n        <ion-input type="text" placeholder="MY QR Code data" [(ngModel)]="qrData">\n        </ion-input>\n     </ion-item>\n    -->\n    <button ion-button class="submit-btn" full icon-left (click)="createCode()"><ion-icon name="apps"></ion-icon>自分のアドレスを表示</button>\n\n    <ion-card *ngIf="myQr">\n      <ngx-qrcode [qrc-value]="myAddress"></ngx-qrcode>\n      <ion-card-content>\n        <p>あなたのアドレス: {{ myAddress }}</p>\n        <button ion-button  icon-left (click)="copy()"><ion-icon name="clipboard"></ion-icon>copy</button>\n      </ion-card-content>\n    </ion-card>\n\n    <button ion-button class="submit-btn" full icon-left (click)="scanCode_main()" color="secondary"><ion-icon name="qr-scanner"></ion-icon>QRコードをスキャンして送金</button>\n    <button ion-button class="submit-btn" full icon-left (click)="selectCode_main()" color="secondary"><ion-icon name="albums"></ion-icon>宛先を選択して送金</button>\n    <button ion-button class="submit-btn" full icon-left (click)="directCode()" color="secondary"><ion-icon name="create"></ion-icon>直接アドレスを入力して送金</button>\n\n    <!--\n    <ion-card *ngIf="yourAddress">\n      <ion-card-content>\n        Scanned: {{ yourAddress }}\n      </ion-card-content>\n    </ion-card>\n    -->\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/send/send.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ionic_native_barcode_scanner__["a" /* BarcodeScanner */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["a" /* AlertController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__["a" /* Clipboard */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__["a" /* Clipboard */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_barcode_scanner__["a" /* BarcodeScanner */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["a" /* AlertController */],
+        __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */],
+        __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__["a" /* Clipboard */]])
 ], SendPage);
 
-var _a, _b, _c, _d, _e;
 //# sourceMappingURL=send.js.map
 
 /***/ }),
