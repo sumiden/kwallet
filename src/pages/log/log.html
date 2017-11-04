@@ -31,8 +31,8 @@
         </ion-avatar>
 
       <h2>address : {{ log.addresses[0] }}</h2>
-      <h2 *ngIf="log.balance.assets[0].qty > 0">受信 : {{ log.balance.assets[0].qty }} MRC</h2>
-      <h2 *ngIf="log.balance.assets[0].qty < 0">送金 : {{ log.balance.assets[0].qty * -1 }} MRC</h2>
+      <h2 *ngIf="log.balance.assets[0].qty > 0">受信 : {{ log.balance.assets[0].qty }} CFC</h2>
+      <h2 *ngIf="log.balance.assets[0].qty < 0">送金 : {{ log.balance.assets[0].qty * -1 }} CFC</h2>
     </ion-item>
   </ion-list>
 </ion-content>

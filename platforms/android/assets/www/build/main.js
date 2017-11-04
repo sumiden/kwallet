@@ -123,22 +123,22 @@ var SendPage = (function () {
         alert.addInput({
             type: 'radio',
             label: '野村　武',
-            value: ""
+            value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
         });
         alert.addInput({
             type: 'radio',
             label: '内田　忠',
-            value: ""
+            value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
         });
         alert.addInput({
             type: 'radio',
             label: '栗林　修',
-            value: ""
+            value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
         });
         alert.addInput({
             type: 'radio',
             label: '島田　岳雄',
-            value: ""
+            value: "1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r"
         });
         alert.addInput({
             type: 'radio',
@@ -452,7 +452,7 @@ var TopPage = (function () {
 TopPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-top',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/top/top.html"*/'\n<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      トップ\n    </ion-title>\n      <ion-buttons end>\n        <button ion-button (click)="logout()" >ログアウト︎</button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="top-content" padding>\n  <p>{{ username }}さんが所持している仮想通貨</p>\n  <ion-list >\n\n    <ion-item color="none" id="page2-list-item7">\n        <ion-avatar item-left>\n          <img src="assets/img/cafenecoin.png" />\n        </ion-avatar>\n        <h2>カフェネコイン</h2>\n        <p clear item-end>{{ maru_balance | number }} CFC</p>\n      </ion-item>\n\n    <ion-item color="none" >\n      <ion-avatar item-left>\n        <img src="assets/img/tomacoin.png" />\n      </ion-avatar>\n      <h2>トマコイン</h2>\n      <p clear item-end>{{ cafene_balance | number }} TMC</p>\n    </ion-item>\n\n  </ion-list>\n  <div id="page3-markdown6" style="text-align:center;" class="show-list-numbers-and-dots">\n  </div>\n  <button ion-button class="submit-btn" full icon-left (click) = "reload()"><ion-icon name="refresh"></ion-icon>reload</button>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/top/top.html"*/,
+        selector: 'page-top',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/top/top.html"*/'\n<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      トップ\n    </ion-title>\n      <ion-buttons end>\n        <button ion-button (click)="logout()" >ログアウト︎</button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="top-content" padding>\n  <p>{{ username }}さんが所持している仮想通貨</p>\n  <ion-list >\n\n    <ion-item color="none" id="page2-list-item7">\n        <ion-avatar item-left>\n          <img src="assets/img/cafenecoin.png" />\n        </ion-avatar>\n        <h2>cafenecoin</h2>\n        <p clear item-end>{{ maru_balance | number }} CFC</p>\n      </ion-item>\n\n  </ion-list>\n  <div id="page3-markdown6" style="text-align:center;" class="show-list-numbers-and-dots">\n  </div>\n  <button ion-button class="submit-btn" full icon-left (click) = "reload()"><ion-icon name="refresh"></ion-icon>reload</button>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/top/top.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_3_angularfire2__["a" /* AngularFire */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */],
@@ -757,7 +757,7 @@ var TransactionPage = (function () {
 }());
 TransactionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-transaction',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/transaction/transaction.html"*/'<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      仮想通貨の内部情報\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<!--\n  カフェネコインとトマコインを入れ替えた関係で\n  アセット名と他2つの情報がちぐはぐになっている\n-->\n<ion-content class="transaction-content" padding>\n  <h1 id="page4-heading2" style="color:#000000;text-align:center;">\n    MultiChain Information\n  </h1>\n    <ion-list>\n        <ion-item>\n          <div id="page4-markdown13" class="show-list-numbers-and-dots">\n            <h5 style="color:#000000;">\n              Assets: {{assets2}}\n            </h5>\n          </div>\n  <div id="page4-markdown12" class="show-list-numbers-and-dots">\n    <h5 style="color:#000000;">\n      Block: {{block | number}}\n    </h5>\n  </div>\n  <div id="page4-markdown14" class="show-list-numbers-and-dots">\n    <h5 style="color:#000000;">\n      TotalBalance: {{totalBalance | number}}\n    </h5>\n  </div>\n</ion-item>\n<ion-item>\n  <div id="page4-markdown13" class="show-list-numbers-and-dots">\n    <h5 style="color:#000000;">\n      Assets: {{assets}}\n    </h5>\n  </div>\n  <div id="page4-markdown12" class="show-list-numbers-and-dots">\n    <h5 style="color:#000000;">\n      Block: {{block2 | number}}\n    </h5>\n  </div>\n  <div id="page4-markdown14" class="show-list-numbers-and-dots">\n    <h5 style="color:#000000;">\n      TotalBalance: {{totalBalance2 | number}}\n    </h5>\n  </div>\n</ion-item>\n</ion-list>\n  <button ion-button class="submit-btn" full icon-left (click) = "get()"><ion-icon name="md-information-circle"></ion-icon>get</button>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/transaction/transaction.html"*/
+        selector: 'page-transaction',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/transaction/transaction.html"*/'<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      仮想通貨の内部情報\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<!--\n  カフェネコインとトマコインを入れ替えた関係で\n  アセット名と他2つの情報がちぐはぐになっている\n-->\n<ion-content class="transaction-content" padding>\n  <h1 id="page4-heading2" style="color:#000000;text-align:center;">\n    MultiChain Information\n  </h1>\n    <ion-list>\n        <ion-item>\n          <div id="page4-markdown13" class="show-list-numbers-and-dots">\n            <h5 style="color:#000000;">\n              Assets: {{assets2}}\n            </h5>\n          </div>\n  <div id="page4-markdown12" class="show-list-numbers-and-dots">\n    <h5 style="color:#000000;">\n      Block: {{block | number}}\n    </h5>\n  </div>\n  <div id="page4-markdown14" class="show-list-numbers-and-dots">\n    <h5 style="color:#000000;">\n      TotalBalance: {{totalBalance | number}}\n    </h5>\n  </div>\n</ion-item>\n</ion-list>\n  <button ion-button class="submit-btn" full icon-left (click) = "get()"><ion-icon name="md-information-circle"></ion-icon>get</button>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/transaction/transaction.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */]])
@@ -819,16 +819,17 @@ var LogPage = (function () {
         this.http.post("https://yqqc8r7eeh.execute-api.us-west-2.amazonaws.com/prod/ab", body, options)
             .map(function (response) { return response.json(); })
             .subscribe(function (result) {
-            //console.log("transactions: "+JSON.stringify(result));
-            //console.log("transactions: "+JSON.stringify(result.result[1]));
+            console.log("transactions: " + JSON.stringify(result));
             if (!JSON.stringify(result.result[1])) {
                 console.log("no log");
             }
             else {
-                console.log("transactions: " + JSON.stringify(result.result[1].balance.assets[0].qty));
-                console.log("transactions: " + JSON.stringify(result.result[1].addresses[0]));
-                console.log("transactions: " + JSON.stringify(result.result));
-                var temp = result.result.splice(0, 1);
+                for (var i = 0; i < 9; i++) {
+                    console.log(JSON.stringify(result.result[i].balance.assets));
+                    if (JSON.stringify(result.result[i].balance.assets) == "[]" || JSON.stringify(result.result[i].balance.assets) == null) {
+                        result.result.splice(i, 1);
+                    }
+                }
                 _this.logs = result.result;
             }
             _this.loading.dismiss();
@@ -860,7 +861,7 @@ var LogPage = (function () {
 }());
 LogPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-log',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/log/log.html"*/'<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      取引履歴\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="log-content" padding>\n    <button ion-button class="submit-btn" full icon-left (click) = "get()"><ion-icon name="md-information-circle"></ion-icon>get（最新10件）</button>\n    <ion-list>\n    <ion-item *ngFor="let log of logs.reverse()">\n\n      <!-- アイコン検索 -->\n      <!-- master -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r\'">\n        <img src="assets/img/master.jpg">\n      </ion-avatar>\n\n      <!-- kiyota -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1DzhEqzER8vsja3s25TGsBSuAWuqUaXwk66s3A\'">\n          <img src="assets/img/k.jpg">\n        </ion-avatar>\n\n      <!-- tomoto -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1XhgukBiUELDAMuNiKoefktkgC6NNYVuLTuFqJ\'">\n          <img src="assets/img/t.jpg">\n        </ion-avatar>\n\n      <h2>address : {{ log.addresses[0] }}</h2>\n      <h2 *ngIf="log.balance.assets[0].qty > 0">受信 : {{ log.balance.assets[0].qty }} MRC</h2>\n      <h2 *ngIf="log.balance.assets[0].qty < 0">送金 : {{ log.balance.assets[0].qty * -1 }} MRC</h2>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/log/log.html"*/
+        selector: 'page-log',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/log/log.html"*/'<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      取引履歴\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="log-content" padding>\n    <button ion-button class="submit-btn" full icon-left (click) = "get()"><ion-icon name="md-information-circle"></ion-icon>get（最新10件）</button>\n    <ion-list>\n    <ion-item *ngFor="let log of logs.reverse()">\n\n      <!-- アイコン検索 -->\n      <!-- master -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r\'">\n        <img src="assets/img/master.jpg">\n      </ion-avatar>\n\n      <!-- kiyota -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1DzhEqzER8vsja3s25TGsBSuAWuqUaXwk66s3A\'">\n          <img src="assets/img/k.jpg">\n        </ion-avatar>\n\n      <!-- tomoto -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1XhgukBiUELDAMuNiKoefktkgC6NNYVuLTuFqJ\'">\n          <img src="assets/img/t.jpg">\n        </ion-avatar>\n\n      <h2>address : {{ log.addresses[0] }}</h2>\n      <h2 *ngIf="log.balance.assets[0].qty > 0">受信 : {{ log.balance.assets[0].qty }} CFC</h2>\n      <h2 *ngIf="log.balance.assets[0].qty < 0">送金 : {{ log.balance.assets[0].qty * -1 }} CFC</h2>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/log/log.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */]])
@@ -1433,7 +1434,7 @@ var LoginPage = (function () {
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/login/login.html"*/'<ion-content class="login-content" padding>\n  <ion-row >\n    <ion-col>\n      <img src="assets/img/title.png" width="200">\n      <img src="assets/img/logo.png" width="200">\n      <div>ver.1.02</div>\n    </ion-col>\n  </ion-row>\n  <div class="login-box">\n    <form #registerForm="ngForm">\n      <ion-row>\n        <ion-col>\n          <ion-list>\n            <ion-item>\n              <ion-input type="email" placeholder="Email" name="email" [(ngModel)]="email" required></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required></ion-input>\n            </ion-item>\n          </ion-list>\n        </ion-col>\n      </ion-row>\n\n      <ion-row>\n        <ion-col class="signup-col">\n          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid" (click)="login()">ログイン</button>\n          <button ion-button class="register-btn" block clear (click)="createAccount()">アカウントを作成する</button>\n        </ion-col>\n      </ion-row>\n\n    </form>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/login/login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/login/login.html"*/'<ion-content class="login-content" padding>\n  <ion-row >\n    <ion-col>\n      <img src="assets/img/title.png" width="200">\n      <img src="assets/img/logo.png" width="200">\n      <div>ver.1.04</div>\n    </ion-col>\n  </ion-row>\n  <div class="login-box">\n    <form #registerForm="ngForm">\n      <ion-row>\n        <ion-col>\n          <ion-list>\n            <ion-item>\n              <ion-input type="email" placeholder="Email" name="email" [(ngModel)]="email" required></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required></ion-input>\n            </ion-item>\n          </ion-list>\n        </ion-col>\n      </ion-row>\n\n      <ion-row>\n        <ion-col class="signup-col">\n          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid" (click)="login()">ログイン</button>\n          <button ion-button class="register-btn" block clear (click)="createAccount()">アカウントを作成する</button>\n        </ion-col>\n      </ion-row>\n\n    </form>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/login/login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],

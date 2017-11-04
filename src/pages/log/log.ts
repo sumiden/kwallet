@@ -39,24 +39,24 @@ export class LogPage {
     this.http.post("https://yqqc8r7eeh.execute-api.us-west-2.amazonaws.com/prod/ab", body, options)
       .map(response => response.json())
       .subscribe(result => {
-        //console.log("transactions: "+JSON.stringify(result));
-        //console.log("transactions: "+JSON.stringify(result.result[1]));
-        
+        console.log("transactions: "+JSON.stringify(result));
         if(!JSON.stringify(result.result[1])) {
           console.log("no log");
         }else{
-        console.log("transactions: "+JSON.stringify(result.result[1].balance.assets[0].qty));
-        console.log("transactions: "+JSON.stringify(result.result[1].addresses[0]));        
-        console.log("transactions: "+JSON.stringify(result.result));                
-        var temp = result.result.splice(0,1);
-        this.logs = result.result;
-        }
-        this.loading.dismiss();                
-        }, 
-        error => {
-          console.log(error),// Error getting the data
-          this.loading.dismiss();        
-        }          
+          for(var i = 0; i < 9; i++) {
+            console.log(JSON.stringify(result.result[i].balance.assets));
+            if(JSON.stringify(result.result[i].balance.assets) == "[]" || JSON.stringify(result.result[i].balance.assets) == null){
+              result.result.splice(i,1);
+            }
+          }
+          this.logs = result.result;
+          }
+          this.loading.dismiss();                
+          }, 
+          error => {
+            console.log(error),// Error getting the data
+            this.loading.dismiss();        
+          }
       );
       
   }
