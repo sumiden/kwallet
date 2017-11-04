@@ -30,6 +30,11 @@
           <img src="assets/img/t.jpg">
         </ion-avatar>
 
+      <!-- others -->
+      <ion-avatar item-left *ngIf="log.addresses[0] != '1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r' && log.addresses[0] != '1DzhEqzER8vsja3s25TGsBSuAWuqUaXwk66s3A' && log.addresses[0] != '1XhgukBiUELDAMuNiKoefktkgC6NNYVuLTuFqJ'">
+        <img src="assets/img/none.png">
+      </ion-avatar>
+
       <h2>address : {{ log.addresses[0] }}</h2>
       <h2 *ngIf="log.balance.assets[0].qty > 0">受信 : {{ log.balance.assets[0].qty }} CFC</h2>
       <h2 *ngIf="log.balance.assets[0].qty < 0">送金 : {{ log.balance.assets[0].qty * -1 }} CFC</h2>
