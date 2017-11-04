@@ -824,7 +824,7 @@ var LogPage = (function () {
                 console.log("no log");
             }
             else {
-                for (var i = 0; i < 9; i++) {
+                for (var i = 0; i < result.result.length; i++) {
                     console.log(JSON.stringify(result.result[i].balance.assets));
                     if (JSON.stringify(result.result[i].balance.assets) == "[]" || JSON.stringify(result.result[i].balance.assets) == null) {
                         result.result.splice(i, 1);
@@ -863,10 +863,10 @@ LogPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-log',template:/*ion-inline-start:"/Users/sumiden/dev/prod4/src/pages/log/log.html"*/'<ion-header>\n  <ion-navbar color="custom-color">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      取引履歴\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="log-content" padding>\n    <button ion-button class="submit-btn" full icon-left (click) = "get()"><ion-icon name="md-information-circle"></ion-icon>get（最新10件）</button>\n    <ion-list>\n    <ion-item *ngFor="let log of logs.reverse()">\n\n      <!-- アイコン検索 -->\n      <!-- master -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r\'">\n        <img src="assets/img/master.jpg">\n      </ion-avatar>\n\n      <!-- kiyota -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1DzhEqzER8vsja3s25TGsBSuAWuqUaXwk66s3A\'">\n          <img src="assets/img/k.jpg">\n        </ion-avatar>\n\n      <!-- tomoto -->\n      <ion-avatar item-left *ngIf="log.addresses[0] == \'1XhgukBiUELDAMuNiKoefktkgC6NNYVuLTuFqJ\'">\n          <img src="assets/img/t.jpg">\n        </ion-avatar>\n\n      <!-- others -->\n      <ion-avatar item-left *ngIf="log.addresses[0] != \'1Zz3rAJ5mBTQepG5uJbkuvF79f3FaKvmyR7f3r\' && log.addresses[0] != \'1DzhEqzER8vsja3s25TGsBSuAWuqUaXwk66s3A\' && log.addresses[0] != \'1XhgukBiUELDAMuNiKoefktkgC6NNYVuLTuFqJ\'">\n        <img src="assets/img/none.png">\n      </ion-avatar>\n\n      <h2>address : {{ log.addresses[0] }}</h2>\n      <h2 *ngIf="log.balance.assets[0].qty > 0">受信 : {{ log.balance.assets[0].qty }} CFC</h2>\n      <h2 *ngIf="log.balance.assets[0].qty < 0">送金 : {{ log.balance.assets[0].qty * -1 }} CFC</h2>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/sumiden/dev/prod4/src/pages/log/log.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */]) === "function" && _c || Object])
 ], LogPage);
 
+var _a, _b, _c;
 //# sourceMappingURL=log.js.map
 
 /***/ }),

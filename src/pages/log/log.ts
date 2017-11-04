@@ -43,7 +43,7 @@ export class LogPage {
         if(!JSON.stringify(result.result[1])) {
           console.log("no log");
         }else{
-          for(var i = 0; i < 9; i++) {
+          for(var i = 0; i < result.result.length; i++) {
             console.log(JSON.stringify(result.result[i].balance.assets));
             if(JSON.stringify(result.result[i].balance.assets) == "[]" || JSON.stringify(result.result[i].balance.assets) == null){
               result.result.splice(i,1);
