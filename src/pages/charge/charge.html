@@ -1,0 +1,29 @@
+<!--
+  Generated template for the ChargePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>charge</ion-title>
+    <ion-buttons end>
+        <button ion-button (click)="return()" color="primary">戻る︎</button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div>
+      クレジットカード情報
+    </div>
+    <ion-input [(ngModel)]="cardinfo.number" placeholder="card number"></ion-input>
+    <ion-input [(ngModel)]="cardinfo.expMonth" placeholder="expiry month"></ion-input>
+    <ion-input [(ngModel)]="cardinfo.expYear" placeholder="expiry year"></ion-input>
+    <ion-input [(ngModel)]="cardinfo.cvc" placeholder="cvc"></ion-input>
+    <ion-input [(ngModel)]="amount" placeholder="price"></ion-input>    
+    <button ion-button (click)="creditRegister()">チャージ</button>
+  </ion-content>

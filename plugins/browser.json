@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-clipboard": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "cordova-plugin-stripe": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
+        }
+    }
+}

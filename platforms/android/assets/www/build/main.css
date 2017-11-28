@@ -27500,6 +27500,33 @@ body {
   user-select: text;
 }
 
+page-charge .StripeElement {
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 1px 3px 0 #e6ebf1;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
+}
+
+page-charge .StripeElement--focus {
+  -webkit-box-shadow: 0 1px 3px 0 #cfd7df;
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+page-charge .StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+page-charge .StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
 page-create .login-content {
   background: #FFF2C1;
 }

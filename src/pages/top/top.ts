@@ -4,6 +4,8 @@ import { NavController, ModalController, IonicPage, LoadingController, Loading }
 import { AngularFire, FirebaseAuthState } from 'angularfire2';
 import 'rxjs/add/operator/map';
 import { LoginPage } from '../login/login';
+import { ChargePage } from '../charge/charge';
+import { Stripe } from '@ionic-native/stripe';
 
 /**
  * Generated class for the TopPage page.
@@ -30,7 +32,7 @@ export class TopPage {
   private authState: FirebaseAuthState;
 
 
-  constructor(public navCtrl: NavController, public http: Http,
+  constructor(public navCtrl: NavController, public http: Http, public stripe: Stripe,
     public angularFire: AngularFire, public modalCtrl: ModalController, 
     private loadingCtrl: LoadingController) {
 
@@ -133,6 +135,12 @@ export class TopPage {
         console.log(error);// Error getting the data
         this.loading.dismiss();        
       });
+  }
+
+  //charge
+  public charge() {
+    let chargeModal = this.modalCtrl.create(ChargePage,{},{"enableBackdropDismiss":false});
+    chargeModal.present();
   }
 
   //ログアウト

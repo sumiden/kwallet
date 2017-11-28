@@ -28,6 +28,9 @@
         "phonegap-plugin-barcodescanner": {
             "CAMERA_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "io.ionic.marucoin"
+        },
+        "cordova-plugin-stripe": {
+            "PACKAGE_NAME": "io.ionic.marucoin"
         }
     },
     "dependent_plugins": {

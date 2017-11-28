@@ -10,6 +10,8 @@ import { TransactionPage } from '../pages/transaction/transaction';
 import { LogPage } from '../pages/log/log';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { ChargePage } from '../pages/charge/charge';
+import { ChargePageModule} from '../pages/charge/charge.module'
 import { LoginPage } from '../pages/login/login';
 import { LoginPageModule } from '../pages/login/login.module';
 import { CreatePage } from '../pages/create/create';
@@ -28,6 +30,7 @@ import { Clipboard } from '@ionic-native/clipboard';
 
 import { AngularFireModule, AuthMethods, AuthProviders } from 'angularfire2';
 import { Firebase } from '@ionic-native/firebase';
+import { Stripe } from '@ionic-native/stripe';
 
 
 export const firebaseConfig = {
@@ -62,6 +65,7 @@ export const firebaseConfig = {
       method: AuthMethods.Password
     }),
     LoginPageModule,
+    ChargePageModule,
     CreatePageModule,
     NgxQRCodeModule
   ],
@@ -88,7 +92,8 @@ export const firebaseConfig = {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Firebase,
     BarcodeScanner,
-    Clipboard
+    Clipboard,
+    Stripe
   ]
 })
 export class AppModule {}

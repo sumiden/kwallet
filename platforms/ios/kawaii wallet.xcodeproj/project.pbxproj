@@ -32,6 +32,8 @@
 		0077D8D31D6E4B5D8BDFC335 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0B8622DEC44D06865EE27D /* QuartzCore.framework */; };
 		2C5BF66EED704CCF809539F1 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B52231FF6AB4026AEA3A1D4 /* CoreImage.framework */; };
 		57FB06DC86DD4CF793B6F4C3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56762DA1339D47F0BA63EB0D /* AudioToolbox.framework */; };
+		345E51E1D84646B58B10B509 /* CordovaStripe.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D61E591C414612B962E9F9 /* CordovaStripe.m */; };
+		7A9A2BAB2E5C43EEBF334774 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D6991616A478CA4D6C0EA /* Stripe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,9 @@
 		4D0B8622DEC44D06865EE27D /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		4B52231FF6AB4026AEA3A1D4 /* CoreImage.framework */ = {isa = PBXFileReference; name = "CoreImage.framework"; path = "System/Library/Frameworks/CoreImage.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		56762DA1339D47F0BA63EB0D /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		86D61E591C414612B962E9F9 /* CordovaStripe.m */ = {isa = PBXFileReference; name = "CordovaStripe.m"; path = "cordova-plugin-stripe/CordovaStripe.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C1709C9D1E444F9BA9E6B819 /* CordovaStripe.h */ = {isa = PBXFileReference; name = "CordovaStripe.h"; path = "cordova-plugin-stripe/CordovaStripe.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		657D6991616A478CA4D6C0EA /* Stripe.framework */ = {isa = PBXFileReference; name = "Stripe.framework"; path = "kawaii wallet/Plugins/cordova-plugin-stripe/Stripe.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 				0077D8D31D6E4B5D8BDFC335 /* QuartzCore.framework in Frameworks */,
 				2C5BF66EED704CCF809539F1 /* CoreImage.framework in Frameworks */,
 				57FB06DC86DD4CF793B6F4C3 /* AudioToolbox.framework in Frameworks */,
+				7A9A2BAB2E5C43EEBF334774 /* Stripe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +193,7 @@
 				4D0B8622DEC44D06865EE27D /* QuartzCore.framework */,
 				4B52231FF6AB4026AEA3A1D4 /* CoreImage.framework */,
 				56762DA1339D47F0BA63EB0D /* AudioToolbox.framework */,
+				657D6991616A478CA4D6C0EA /* Stripe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,6 +234,8 @@
 				364AE708C0454956A85C7DB8 /* CDVBarcodeScanner.mm */,
 				A01FD1D6DE814F49AFB0223F /* zxing-all-in-one.cpp */,
 				FA83A17761964FC39E4037D2 /* zxing-all-in-one.h */,
+				86D61E591C414612B962E9F9 /* CordovaStripe.m */,
+				C1709C9D1E444F9BA9E6B819 /* CordovaStripe.h */,
 			);
 			name = Plugins;
 			path = "kawaii wallet/Plugins";
@@ -349,6 +358,7 @@
 				F204ADBD6B13422A83BABCC3 /* IonicKeyboard.m in Sources */,
 				D2393B571C494986BD04C8D1 /* CDVBarcodeScanner.mm in Resources */,
 				7979E3F211C6442691EEB6AC /* zxing-all-in-one.cpp in Resources */,
+				345E51E1D84646B58B10B509 /* CordovaStripe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +394,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "kawaii wallet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"kawaii wallet/Plugins/cordova-plugin-stripe\"",
+				);
 			};
 			name = Debug;
 		};
@@ -406,6 +420,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "kawaii wallet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"kawaii wallet/Plugins/cordova-plugin-stripe\"",
+				);
 			};
 			name = Release;
 		};
