@@ -5,7 +5,6 @@ import { AngularFire, FirebaseAuthState } from 'angularfire2';
 import 'rxjs/add/operator/map';
 import { LoginPage } from '../login/login';
 
-
 /**
  * Generated class for the TopPage page.
  *
@@ -144,7 +143,7 @@ export class TopPage {
     this.maru_balance = null;
     this.coinAddress = '';
     console.log("logout");
-    this.angularFire.auth.logout();    
+    this.angularFire.auth.logout();
   }
 
   //情報取得

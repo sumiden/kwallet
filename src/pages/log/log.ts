@@ -25,6 +25,7 @@ export class LogPage {
 
   //履歴確認
   listTransactions(){
+    this.logs = [];
     this.showLoading();    
     var headers = new Headers();
     headers.append('Content-Type', 'application/json' );
